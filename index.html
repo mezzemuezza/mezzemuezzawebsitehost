@@ -37,7 +37,7 @@
 							<ul>
 								<li><a href="#about">About</a></li>
 								<li><a href="https://mezzemuezza.square.site/">Order</a></li>
-								<li><a href="#Catering">Catering</a></li>
+								<li><a href="#Catering">Book us</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -54,7 +54,78 @@
 							<article id="about">
 							
 								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="images/pic01.jpg" height = "250" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/Tacodouble.jpg" height = "250" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/pitaban.jpg" height = "250" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons
+  <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+  <!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+<!-- </div> -->
+<!-- <br> -->
+
+<!-- The dots/circles -->
+<!-- <div style="text-align:center"> -->
+  <!-- <span class="dot" onclick="currentSlide(1)"></span> -->
+  <!-- <span class="dot" onclick="currentSlide(2)"></span> -->
+  <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+<!-- </div> -->
+<script>
+<!-- let slideIndex = 1; -->
+<!-- showSlides(slideIndex); -->
+
+<!-- function plusSlides(n) { -->
+  <!-- showSlides(slideIndex += n); -->
+<!-- } -->
+
+<!-- function currentSlide(n) { -->
+  <!-- showSlides(slideIndex = n); -->
+<!-- } -->
+
+<!-- function showSlides(n) { -->
+  <!-- let i; -->
+  <!-- let slides = document.getElementsByClassName("mySlides"); -->
+  <!-- let dots = document.getElementsByClassName("dot"); -->
+  <!-- if (n > slides.length) {slideIndex = 1}     -->
+  <!-- if (n < 1) {slideIndex = slides.length} -->
+  <!-- for (i = 0; i < slides.length; i++) { -->
+    <!-- slides[i].style.display = "none";   -->
+  <!-- } -->
+  <!-- for (i = 0; i < dots.length; i++) { -->
+    <!-- dots[i].className = dots[i].className.replace(" active", ""); -->
+  <!-- } -->
+  <!-- slides[slideIndex-1].style.display = "block";   -->
+  <!-- dots[slideIndex-1].className += " active"; -->
+<!-- } -->
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+						
 								<p>We believe food is more than just a meal it's a shared experience. That is why our menu celebrates fresh ingredients, fusion recipes, and generous hospitality.</p>
 
 								<p>Mezze Muezza tells the story of a cat named Muezza, the cherished feline from Middle Eastern lore known for comfort and care, who is enchanted by the vibrant aromas and soulful tastes of Lebanon’s beloved dishes.</p>
@@ -99,40 +170,76 @@
 							
 													<!-- Catering -->
 							<article id="Catering">
-								<h2 class="major">Catering</h2>
-<!-- 								<h3>Food Truck Catering</h3>
-								<h4>Mobile food truck basic package(SET MENU)</h4>
-								<p>50 minimum people</p>
-								<p>One set main</p>
-								<p>One set side</p>
-								<p>One set dessert + $10</p>
-								
 
+							 <section id="Catering" class="black-section">
+							  <div class="section-inner">
+								<h2>CATERING</h2>
 
-								<h4>Mobile food truck signature package(SET MENU)</h4>
-								<p>50 minimum people</p>
-								<p>One set starter</p>
-								<p>One set main</p>
-								<p>One set side</p>
-								<p>One set dessert + $</p>
-								</p>
-								<h4>ADDITIONAL CHARGES</h4>
-								<p>Additional $750 food truck hire fee will be applied.</p>
-								<p>Custom plans are available but additional charges may apply</p>
-								<p>Price differs for events under 50 people</p> -->
-								<h3> Private Catering </h3>								
-								<p>We’d love to cater your special event! Reach out to request a personalised quote.</p>
-								<h3> Request a quote </h3>	
-								
+								<!-- Grid for catering boxes -->
+								<div class="grid-wrapper">
+								  <div class="catering-box">
+									<!-- <img src="images/street-box.jpg" alt="Muezza Street Box"> -->
+									<h3>MEZZE PLATTER</h3>
+									<h4>$118</h4>
+									<p>10 X Falafel <br>
+										10 X Small kebab spring rolls <br>
+										Serve of crispy cauliflower <br>
+										Serve of crispy pitas <br>
+										Served with hummus and tzakiki <br>
+									</p>
+								  </div>
 
+								  <div class="catering-box">
+									<!-- <img src="images/signature-box.jpg" alt="Muezza Signature Box"> -->
+									<h3>MEZZE MUEZZA BOX</h3>
+									<h4>$145</h4>
+									<p>Caters 8 - 10 people<br>
+										4 X Traditional chicken tacos <br>
+										4 X Signature cauliflower tacos<br>
+										4 X Hummus falafel tacos<br>
+										4 X Arabian chicken rice cups<br>
+										4 X Arabian vegetarian rice cups<br>
+										8 X Small Tzakiki dips
+									</p>
+								  </div>
 
+								  <div class="catering-box">
+									<!-- <img src="images/mini-mains.jpg" alt="Mini Mains Box"> -->
+									<h3>MUEZZA SIGNATURE BOX</h3>
+									<h4>$179</h4>
+									<p>Caters 8 - 10 people <br>
+										6 X Traditional chicken tacos <br>
+										6 X Signature cauliflower tacos<br>
+										4 X Arabian nacho bowls<br>
+										10 X Small kebab spring rolls<br>
+										10 X small Tzakiki dips <br>
+									</p>
+								  </div>
 
+								  <div class="catering-box">
+									<!-- <img src="images/custom-box.jpg" alt="Custom Catering"> -->
+									<h3>CUSTOM PACKAGE</h3>
+									<h4>REQUEST QUOTE</h4>
+									<p>Tailored menu and food truck hire options available</p>
+								  </div>
+								</div><!-- end grid-wrapper -->
 
+								<!-- Quote Form UNDER the grid -->
+								<div class="catering-form">
+								  <h3>Request a Quote</h3>
 								<form action="https://api.web3forms.com/submit" method="POST">
 									<!-- Web3Forms Access Key -->
 									<input type="hidden" name="access_key" value="31cbf087-6bb1-4d93-b095-902fcfbb4578">
 
 									<div class="fields">
+										<div class="field">
+											<label for="Subject">Choose an option:</label>
+											<select id="Subject" name="Subject">
+												<option value="text_option_a">Private Catering</option>
+												<option value="text_option_b">Food Truck Hire</option>
+												<option value="text_option_c">Other Enquiries</option>
+											</select>
+										</div>
 										<div class="field half">
 											<label for="name">Name</label>
 											<input type="text" name="name" id="name" required />
@@ -141,10 +248,23 @@
 											<label for="email">Email</label>
 											<input type="email" name="email" id="email" required />
 										</div>
-										<div class="field">
-											<label for="message">Message</label>
+
+										
+										<div class="field half">
+										<label for="Location">Location</label>
+										<input type="text" id="Location" name="Location" placeholder="Enter your event location" required>
+										</div>
+
+
+										<div class="field half">
+											<label for="event-date">Select Date:</label>
+											<input type="date" id="event-date" name="event-date" required>
+										</div>
+										<div class="field ">
+											<label for="message">Additional Details</label>
 											<textarea name="message" id="message" rows="4" required></textarea>
 										</div>
+
 									</div>
 
 									<ul class="actions">
@@ -152,12 +272,19 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
-								<ul class="icons">
+								</div>
+
+  </div>
+  								<ul class="icons">
 									<li><a href="https://www.facebook.com/mezzemuezza/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 									<li><a href="https://www.instagram.com/mezzemuezza/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 								</ul>
-							</article>
+</section>
 
+
+							
+
+</article>
 						<!-- Elements -->
 							<article id="elements">
 								<h2 class="major">Elements</h2>
